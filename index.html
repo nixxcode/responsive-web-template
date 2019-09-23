@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Responsive Website Template</title>
+        <meta name="description" content="Sample of a fully responsive website">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="./css/cookieconsent.min.css" />
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/media.css">
+        <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet'>
+        <link href="./fontawesome/css/fontawesome.css" rel="stylesheet">
+        <link href="./fontawesome/css/solid.css" rel="stylesheet">
+    </head>
+    <body onclick="documentClick(event)">
+        
+        <!--[if lt IE 10]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. This website supports internet explorer 10 and newer. Please <a href="https://www.whatismybrowser.com/guides/how-to-update-your-browser/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <header>
+            <nav>
+                <a href="#" class="no-hover-decoration white">
+                    <div class="logo box">
+                        <span>
+                            <i class="fas fa-star"></i>&nbsp;
+                            <i class="fas fa-star"></i>&nbsp;
+                            <i class="fas fa-star"></i>&nbsp;
+                        </span>
+                        <span>LOGO GOES HERE</span>
+                    </div>
+                </a>
+
+                <button type="button" class="collapse-button white" onclick="toggleNav()" aria-label="Toggle Navbar"><i class="fas fa-bars"></i></button>
+
+                <ul id="navbar" style="display: none;">
+                    <li>
+                        <a href="javascript:void(0);" class="dropdown" name="dropdown">ABOUT US <i class="fas fa-sort-down"></i></a>
+                        <ul class="dropdown-container" name="dropdown-container" style="display: none;">
+                            <li><a href="#">Link here</a></li>
+                            <li><a href="#">Another link here</a></li>
+                            <li class="last"><a href="#">A third link here</a></li>
+                        </ul>
+                    </li>
+                                       
+                    <li><a href="#">NEWS</a></li>
+                    
+                    <li>
+                        <a href="javascript:void(0);" class="dropdown" name="dropdown">PUBLICATIONS <i class="fas fa-sort-down"></i></a>
+                        <ul class="dropdown-container" name="dropdown-container" style="display: none;">
+                            <li><a href="#">Publication here</a></li>
+                            <li><a href="#">Another publication here</a></li>
+                            <li class="last"><a href="#">A third publication here</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="#">CONTACT US</a></li>
+                    
+                    <li class="last">
+                        <form action="#" method="get" class="search-form">
+                            <input type="text" name="search" class="search-box white" placeholder="Search" />
+                            <button type="submit" class="search-button white"><i class="fas fa-search"></i></button>
+                        </form>
+                    </li>
+                </ul>
+
+                
+            </nav>
+        </header>
+
+        <main>
+            <div class="intro-container" style="background-image: url(./img/hands.jpeg);">
+                <div class="image-overlay"></div>
+                
+                <div class="intro-content">
+                    
+                    <div class="intro-title">
+                        <h1>Lorem ipsum dolor sit amet consectetur adipiscing elit</h1>
+                    </div>
+                    
+                    <div class="intro-text">
+                        <h2>Sed eget purus Lacus integer sit amet feugiat quam nulla lacinia dignissim</h2>
+
+                        <a href="#" class="white" style="display: inline;">
+                            <div class="learn-more box box-hover-fill">
+                                <span>LEARN MORE ABOUT US</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="articles-container">
+                <div class="articles-box">
+                    <div class="article article-large" style="background-image: url(./img/meeting.jpeg)">
+                        <div class="image-overlay"></div>
+                        <div class="article-content">
+                            <h2 class="article-title">Lorem ipsum</h2>
+                            <span class="article-text">Lorem ipsum dolor sit amet adipiscing elit vestibulum efficitur varius sem vel rutrum sed eget purus lacus. Integer sit amet feugiat quam</span>
+                            <br/>
+                            <a href="#" class="white">
+                                <span class="article-read-more">READ MORE<i class="fas fa-arrow-right"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="small-article-wrapper">
+                        <div class="article article-small" style="background-image: url(./img/laptop.jpeg)">
+                                <div class="image-overlay"></div>
+                            <div class="article-content">
+                                <h3 class="article-title">Lorem ipsum dolor sit amet consectetur adipiscing elit</h3>
+                                <span class="article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit aliquam.</span>
+                                <br/>
+                                <a href="#" class="white">
+                                    <span class="article-read-more">READ MORE<i class="fas fa-arrow-right"></i></span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="article article-small" style="background-image: url(./img/calculator.jpeg)">
+                                <div class="image-overlay"></div>
+                            <div class="article-content">
+                                <h3 class="article-title">Lorem ipsum</h3>
+                                <span class="article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit aliquam.</span>
+                                <br/>
+                                <a href="#" class="white">
+                                    <span class="article-read-more">READ MORE<i class="fas fa-arrow-right"></i></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="publications-container">
+                <span>Publications</span>
+
+                <div class="publications-box">
+                    <div class="publication">
+                        <span class="date"><i class="fas fa-clock"></i>January 2017</span>
+                        <span class="title">Sed eget purus lacus integer sit amet feuglat quam</span>
+                        <a href="#">DOWNLOAD PDF<i class="fas fa-cloud-download-alt"></i></a>
+                    </div>
+                    <hr class="publications-divider" />
+                    <div class="publication">
+                        <span class="date"><i class="fas fa-clock"></i>December 2016</span>
+                        <span class="title">Sed eget purus lacus integer sit amet feuglat quam</span>
+                        <a href="#">DOWNLOAD PDF<i class="fas fa-cloud-download-alt"></i></a>
+                    </div>
+                    <hr class="publications-divider" />
+                    <div class="publication">
+                        <span class="date"><i class="fas fa-clock"></i>October 2015</span>
+                        <span class="title">Sed eget purus lacus integer sit amet feuglat quam</span>
+                        <a href="#">DOWNLOAD PDF<i class="fas fa-cloud-download-alt"></i></a>
+                    </div>
+                </div>
+                
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-container">
+                <span class="help-line">NATIONAL HELPLINE 0888 8022 133</span>
+                <div class="footer-link-container">
+                    <a href="#" class="white">Related Organisations</a>
+                    <div class="footer-link-divider">|</div>
+                    <a href="#" class="white">Terms & Conditions</a>
+                    <div class="footer-link-divider">|</div>
+                    <a href="#" class="white">Accessibility</a>
+                </div>
+                <span class="copyright">© Dominik Petrovic, 2019</span>
+            </div>
+        </footer>
+        
+        <script src="./js/script.js"></script>
+        <script src="./js/cookieconsent.min.js"></script>
+
+        <script>
+            window.cookieconsent.initialise({
+                container: document.getElementById("content"),
+                palette:{
+                popup: {background: "#fff"},
+                button: {background: "#2C4089"},
+                },
+                revokable:false,
+                onStatusChange: function(status) {
+                console.log(this.hasConsented() ?
+                'enable cookies' : 'disable cookies');
+                },
+                law: {
+                regionalLaw: false,
+                },
+                location: true,
+            });
+        </script>
+
+    </body>
+</html>

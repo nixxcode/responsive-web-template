@@ -1,0 +1,133 @@
+@media (min-width: 768px) {
+    .intro-content {
+        padding-right: 50%;
+    }
+
+    .article-large > .article-content {
+        width: 50%;
+    }
+    
+    .article-small {
+        width: 49.8%;
+    }
+
+    .publications-container {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    .publications-container > span {
+        text-align: left;
+    }
+
+    .publications-container > hr {
+        width: 0;
+    }
+
+    .publications-divider {
+        display: none;
+    }
+
+    .publication {
+        width: 27%;
+    } 
+}
+
+@media (min-width: 992px) {
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;   
+    }
+    
+    nav > ul {
+        margin: 0; 
+        display: flex;
+    }
+    
+    nav > ul li {
+        display: inline-block;
+        padding: 0 16px;
+        margin: 0;
+    }
+
+    .logo {
+        margin: 0;
+    }
+
+    .collapse-button {
+        display: none;
+    }
+
+    .dropdown-container {
+        min-width: 200px;
+        z-index: 20;
+        position: absolute;
+    }
+
+    .footer-link-container {
+        margin: 0;
+        width: auto;
+    }
+
+    .footer-link-container > a {
+        display: inline;
+    }
+
+    .footer-container .help-line {
+        text-align: left;
+    }
+    
+    .footer-container .copyright {
+        width: auto;
+    }
+
+    .footer-link-divider {
+        display: inline;
+    }
+}
+
+@media (min-width: 1200px) {
+    .articles-box {
+        flex-wrap: nowrap;
+        width: 1010px;
+    }
+
+    .article-large {
+        width: 667px;
+        height: 500px;
+    }
+    
+    .article-small {
+        width: 340px;
+    }  
+
+    .small-article-wrapper {
+        width: 340px;
+        flex-direction: column;
+    }
+
+    header {
+        padding-left: 95px;
+        padding-right: 95px;
+    }
+
+    .intro-content {
+        padding-left: 95px;
+    }
+
+    .articles-container {
+        padding-left: 95px;
+        padding-right: 95px;
+    }
+
+    .publications-container {
+        padding-left: 95px;
+        padding-right: 95px;
+    }
+
+    .footer-container {
+        padding-left: 95px;
+        padding-right: 95px;
+    }
+}
