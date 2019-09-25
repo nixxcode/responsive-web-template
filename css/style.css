@@ -2,6 +2,10 @@ html {
     background-color: #DDDDDD;
 }
 
+html * {
+    outline-color: yellow;
+}
+
 html a {
     text-decoration: none;
 }
@@ -389,6 +393,7 @@ input::placeholder {
     font-size: 0.8rem;
     display: inline-block;
     margin-top: 16px;
+    outline-color: #2C4089;
 }
 
 .publication > a > i {
